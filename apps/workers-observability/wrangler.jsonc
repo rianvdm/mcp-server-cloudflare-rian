@@ -7,7 +7,8 @@
 	"main": "src/index.ts",
 	"compatibility_date": "2025-03-10",
 	"compatibility_flags": ["nodejs_compat"],
-	"name": "mcp-cloudflare-workers-observability-dev",
+	"name": "mcp-cloudflare-rian",
+	"account_id": "db8ef1f4b492e4727e7fab0e12907871",
 	"migrations": [
 		{
 			"new_sqlite_classes": ["MyMCP"],
@@ -28,7 +29,7 @@
 	"kv_namespaces": [
 		{
 			"binding": "OAUTH_KV",
-			"id": "DEV_KV"
+			"id": "e04a5ec5441949ebb6e84281bf6598c3"
 		}
 	],
 	"vars": {
@@ -37,7 +38,7 @@
 	"dev": {
 		"port": 8976
 	},
-	"workers_dev": false,
+	"workers_dev": true,
 	"preview_urls": false,
 	"env": {
 		"staging": {
