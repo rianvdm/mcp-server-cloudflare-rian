@@ -8,6 +8,7 @@ import {
 	handleTokenExchangeCallback,
 } from '@repo/mcp-common/src/cloudflare-oauth-handler'
 import { registerAccountTools } from '@repo/mcp-common/src/tools/account'
+import { registerGraphQLTools } from '@repo/mcp-common/src/tools/graphql'
 import { registerWorkersTools } from '@repo/mcp-common/src/tools/worker'
 
 import { registerLogsTools } from './tools/logs'
@@ -42,6 +43,9 @@ export class MyMCP extends McpAgent<Env, State, Props> {
 
 		// Register Cloudflare Workers logs tools
 		registerLogsTools(this)
+
+		// Register Cloudflare GraphQL tools
+		registerGraphQLTools(this)
 	}
 
 	getActiveAccountId() {
